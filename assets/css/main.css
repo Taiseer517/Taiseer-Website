@@ -505,37 +505,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
-.section-title {
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  bottom: 0;
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
@@ -1291,6 +1260,11 @@ section,
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   font-size: 16px;
   transition: all 0.3s ease-in-out;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255,255,255,0.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
 .about-card i {
@@ -1734,4 +1708,150 @@ body,
 .skill-cell:hover i,
 .skill-cell:hover span {
   color: #81d4fa;
+}
+
+/* ========== PROJECTS CARD LIST STYLE FIX ========== */
+.timeline-content ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+  list-style: disc;
+  line-height: 1.8;
+}
+
+.timeline-content ul li {
+  margin-bottom: 0.8rem;
+  font-size: 0.97rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUpList 0.6s ease forwards;
+}
+
+.timeline-content ul li strong {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+@keyframes fadeUpList {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-content ul li {
+    font-size: 0.95rem;
+  }
+}
+
+.timeline-section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #1f1f1f;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+
+.core-proficiencies-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #bbbbbb;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+
+.about-summary {
+  font-size: 1.1rem;
+  color: #e4e4e4;
+  line-height: 1.85;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about-summary p {
+  margin-bottom: 1.6rem;
+}
+
+.about-summary strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* === PROJECT CARD TWEAKS === */
+.custom-project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 520px; /* Try adjusting this if needed */
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+/* Ensure all images have the same fixed size and fit properly */
+.custom-project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+
+.custom-project-card:hover {
+  transform: translateY(-4px);
+}
+
+.custom-project-card h4 {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.4rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.project-desc,
+.project-tech {
+  color: #cccccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #4ea1ff;
+  text-decoration: none;
+  gap: 0.4rem;
+}
+
+.github-link i {
+  font-size: 1.1rem;
+}
+
+.github-link:hover {
+  color: #ffffff;
 }
