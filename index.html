@@ -381,74 +381,101 @@
         </div>
 
         <h3 class="resume-title mt-5"><i class="bi bi-kanban-fill me-2"></i>Projects</h3>
-        <div class="timeline">
-          <div class="timeline-content">
-            <!-- Enactus UCalgary - Wildfire Risk & Early Detection Modeling -->
-            <h4>Enactus UCalgary - Wildfire Risk &amp; Early Detection Modeling <span class="badge">Sept 2025 - Present</span></h4>
-            <ul>
-              <li>Combined multi-source geospatial and time-series data into a clean, analysis-ready dataset for early wildfire detection.</li>
-              <li>Built a repeatable ETL pipeline with data checks for consistent fields, duplicates, and correct time alignment.</li>
-              <li>Created model-ready features and a baseline ML prototype using leakage-safe train/test splits and tracking runs.</li>
-              <li>Maintained clear documentation and kept the pipeline in version control to support team collaboration and steady progress toward deployment.</li>
-            </ul>
 
-            <!-- Vancouver 311 Service Request Analysis -->
-            <h4>Vancouver 311 Service Request Analysis <span class="badge">Sept 2025 - Dec 2025</span></h4>
-            <ul>
-              <li>Cleaned and standardized large-scale service request data to ensure analysis-ready quality for reporting.</li>
-              <li>Designed a star schema to support scalable joins and Power BI integration, improving query performance.</li>
-              <li>Developed SQL queries to extract KPIs and service metrics across departments, request types, and channels.</li>
-              <li>Built a Power BI dashboard to visualize seasonal trends, overburdened departments, high demand request types, and faster response channels, generating actionable recommendations for service optimization.</li>
-            </ul>
+<div class="timeline">
 
-            <!-- Predictive Modelling of Hiring Outcomes -->
-            <h4>Predictive Modelling of Hiring Outcomes <span class="badge">Sept 2025 - Dec 2025</span></h4>
-            <ul>
-              <li>Analyzed survey response datasets to identify key predictors of hiring outcomes using R studio and statistical modeling techniques.</li>
-              <li>Simplified high cardinality location data by grouping 173 countries into 10 distinct regions, improving data quality and model understanding.</li>
-              <li>Performed logistic regression with AIC optimization and hypothesis testing to identify key hiring predictors.</li>
-              <li>Performed multicollinearity checks and removed redundant features to strengthen model performance and reliability.</li>
-              <li>Achieved an accurately optimized model, highlighting the feature importance of each factor on hiring outcomes.</li>
-            </ul>
-
-            <!-- Full-Stack E-commerce Platform -->
-            <h4>Full-Stack E-commerce Platform <span class="badge">Mar 2025 - Jul 2025</span></h4>
-            <ul>
-              <li>Developed a responsive storefront with catalog, admin panel and secure checkout, enabling end-to-end purchases on mobile and desktop along with order tracking.</li>
-              <li>Modeled product, order and pricing data in SQL, produced data driven dashboards using Power BI to identify trends and key products.</li>
-              <li>Containerized services with Docker for reliable delivery, ease of use and reproducibility.</li>
-            </ul>
-
-            <!-- IEEE Conference Paper -->
-            <h4>IEEE Conference Paper — ICCIT 2024 <span class="badge">June 2023 - Nov 2024</span></h4>
-            <p><em>“Comparative Analysis of Deep Learning Models for Intracerebral Hemorrhage Detection from CT”</em></p>
-            <ul>
-              <li>Co-authored and published a comparative study benchmarking multiple CNN architectures under a standardized training/evaluation pipeline and preprocessing of data.</li>
-              <li>Ran supervised learning pipelines with Python, evaluated with accuracy, recall, F1 score and explained trade-offs.</li>
-              <li>Handled sensitive data with care and followed basic confidentiality practices.</li>
-              <li>Used Grad-CAM to improve model understanding, turning results into clear visualizations to highlight where the models focused on to make predictions.</li>
-            </ul>
-
-            <!-- Student Monitoring System -->
-            <h4>Student Monitoring System <span class="badge">Jul 2022 - Sept 2022</span></h4>
-            <ul>
-              <li>Designed MySQL schemas and REST endpoints, built Power BI dashboards to identify trends, attendance risk flags, and instructor reports.</li>
-              <li>Collaborated with instructors and admins to prioritize high-impact analytics and convert insights into useful feature changes.</li>
-            </ul>
-
-            <!-- Arcade Game Development -->
-            <h4>Arcade Game Development <span class="badge">2023</span></h4>
-            <ul>
-              <li>Built a simple, physics-based arcade game in Unity using C#.</li>
-              <li>Produced and tested cross-platform releases for Windows and Android.</li>
-              <li>Implemented core mechanics, collision handling, scoring, and basic UI.</li>
-              <li>Managed end-to-end delivery: project setup via Unity Hub, asset integration and builds.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <!-- Enactus -->
+  <div class="timeline-item" data-aos="fade-up">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Enactus UCalgary - Wildfire Risk &amp; Early Detection Modeling <span class="badge">Sept 2025 - Present</span></h4>
+      <ul class="mb-0">
+        <li>Integrated multi-source geospatial + time-series data into an analysis-ready dataset for early wildfire detection.</li>
+        <li>Built a repeatable ETL pipeline with data checks (schema consistency, duplicates, and time alignment) and leakage-safe ML baselines with tracked runs.</li>
+        <li>Maintained documentation and version-controlled workflows to support collaboration and progress toward deployment.</li>
+      </ul>
     </div>
   </div>
+
+  <!-- Vancouver 311 -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Vancouver 311 Service Request Analysis <span class="badge">Sept 2025 - Dec 2025</span></h4>
+      <ul class="mb-0">
+        <li>Cleaned and standardized large-scale 311 service request data for analysis-ready reporting.</li>
+        <li>Designed a star schema and wrote SQL KPIs across departments, request types, and channels for scalable analysis.</li>
+        <li>Built a Power BI dashboard highlighting seasonal trends, workload hotspots, and faster response channels with actionable recommendations.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hiring outcomes -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Predictive Modelling of Hiring Outcomes <span class="badge">Sept 2025 - Dec 2025</span></h4>
+      <ul class="mb-0">
+        <li>Analyzed survey response data in R to identify predictors of hiring outcomes using statistical modelling.</li>
+        <li>Reduced high-cardinality location data by grouping 173 countries into 10 regions to improve interpretability and data quality.</li>
+        <li>Fit and refined logistic regression using AIC selection, hypothesis testing, and multicollinearity checks to strengthen reliability.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- E-commerce -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Full-Stack E-commerce Platform <span class="badge">Mar 2025 - Jul 2025</span></h4>
+      <ul class="mb-0">
+        <li>Built a responsive storefront with admin panel and secure checkout, enabling end-to-end ordering and tracking.</li>
+        <li>Modeled product/order/pricing data and created Power BI dashboards to identify trends and high-performing products.</li>
+        <li>Containerized services with Docker for reproducible local development and deployment.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- IEEE -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>IEEE Conference Paper — ICCIT 2024 <span class="badge">June 2023 - Nov 2024</span></h4>
+      <p class="mb-2"><em>“Comparative Analysis of Deep Learning Models for Intracerebral Hemorrhage Detection from CT”</em></p>
+      <ul class="mb-0">
+        <li>Co-authored and published a comparative study benchmarking CNN architectures under a standardized training/evaluation pipeline.</li>
+        <li>Ran supervised learning experiments in Python and evaluated accuracy, recall, and F1 while explaining trade-offs.</li>
+        <li>Used Grad-CAM visualizations to improve interpretability and communicate what models focused on during prediction.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Student Monitoring -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Student Monitoring System <span class="badge">Jul 2022 - Sept 2022</span></h4>
+      <ul class="mb-0">
+        <li>Designed MySQL schemas and REST endpoints, and built Power BI dashboards for trends, risk flags, and instructor reporting.</li>
+        <li>Worked with stakeholders to prioritize high-impact insights and translate them into practical feature updates.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Arcade -->
+  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+    <div class="timeline-icon"></div>
+    <div class="timeline-content">
+      <h4>Arcade Game Development <span class="badge">2023</span></h4>
+      <ul class="mb-0">
+        <li>Built a physics-based arcade game in Unity (C#) and shipped builds for Windows and Android.</li>
+        <li>Implemented core gameplay systems including scoring, collisions, and UI, and managed end-to-end delivery.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
 </section>
 <!-- /Resume Section -->
 
